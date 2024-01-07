@@ -9,7 +9,7 @@
 Adafruit_ST7789 tft = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_RST);
 
 void setup() {
-  Serial.begin(9600); // Inicializa a comunicação serial
+  Serial.begin(115200); // Inicializa a comunicação serial
   tft.init(240, 240, SPI_MODE2); // Inicializa o display
   tft.setRotation(2); // Define a orientação do display
   tft.fillScreen(ST77XX_BLACK); // Preenche a tela com a cor preta
